@@ -8,7 +8,7 @@ import requests
 import datetime
 import argparse
     
-API_token = "<put API token here>"
+API_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NTc3MDIxOS1jYWE2LTRmOTctOTE3Ni0zNDBlZGMzZDQxNTgiLCJqdGkiOiJhNDY3MWNjZTlmN2FkNzhjNTcxMTAwMThhMDU1OGZmZDJkYjI0YjIwZmFkZmE2ZGY1YTQ0NmZmMDg5YzE5NmYzNWJmODVmYzZiMTcwNTgxNSIsImlhdCI6MTY5OTAxODA0MS42NTk1MjYsIm5iZiI6MTY5OTAxODA0MS42NTk1MywiZXhwIjozMjUwMzY4MDAwMC4wMDkwNiwic3ViIjoiNTQ1ODEiLCJzY29wZXMiOlsiYXBpIl19.pGWrdb-QuRDlDuLo08LXgcKs8p2Ak54vu9AiNDsctldc144ZCXOZNClkoygazlhRcJJab4c3qWbre6H_bbpq-g"
 
 ID_Eco = "24"
 action_write = "write"
@@ -34,7 +34,7 @@ else:
     print('newState must be "ON" or "OFF"!')
     exit(1)
 
-url = "https://api.givenergy.cloud/v1/inverter/<your Inverter ID>/settings"
+url = "https://api.givenergy.cloud/v1/inverter/FD2327G421/settings"
 headers = {
     "Authorization": "Bearer " + API_token,
     "Content-Type": "application/json",
@@ -57,22 +57,23 @@ if newSetting != currentSetting:
     if verbose:
         timeStamp = datetime.datetime.now(datetime.timezone.utc).isoformat()
         print(timeStamp + " - " + "Setting Inverter Eco Status...", str(newSetting))
-        newSettingJSON = {"value": str(newSetting).lower()}
+    
+    newSettingJSON = {"value": str(newSetting).lower()}
 
-        r = requests.post(
-        url + "/" + ID_Eco + "/" + action_write, headers=headers, json=newSettingJSON
-        )
-        result = r.json()
-        # print(str(result))
+    r = requests.post(
+    url + "/" + ID_Eco + "/" + action_write, headers=headers, json=newSettingJSON
+    )
+    result = r.json()
+    # print(str(result))
 
-        timeStamp = datetime.datetime.now(datetime.timezone.utc).isoformat()
-        if result["data"]["success"] == True and result["data"]["value"] == newSetting:
-            if verbose:
-                print(timeStamp + " - " + "Inverter Eco Status Change Successful")
-            else:
-                print(
-                timeStamp
-                + " - "
-                + "Inverter Eco Status Change Failed:"
-                + result["data"]["message"]
-                )
+    timeStamp = datetime.datetime.now(datetime.timezone.utc).isoformat()
+    if result["data"]["success"] == True and result["data"]["value"] == newSetting:
+        if verbose:
+            print(timeStamp + " - " + "Inverter Eco Status Change Successful")
+        else:
+            print(
+            timeStamp
+            + " - "
+            + "Inverter Eco Status Change Failed:"
+            + result["data"]["message"]
+            )
