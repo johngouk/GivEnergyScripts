@@ -1,7 +1,8 @@
 """
     Program to modify current Eco Inverter setting using Givenergy Cloud API
     Modified for Python 3.4.2 isoformat() sig
-
+    Usage:
+        python GivEnergyEcoModeSet.py [-v] [ON|OFF]
 """
 import requests
 import datetime
