@@ -70,10 +70,10 @@ if newSetting != currentSetting:
     if result["data"]["success"] == True and result["data"]["value"] == newSetting:
         if verbose:
             print(timeStamp + " - " + "Inverter Eco Status Change Successful")
-        else:
-            print(
-            timeStamp
-            + " - "
-            + "Inverter Eco Status Change Failed:"
-            + result["data"]["message"]
-            )
+    else:
+        print(
+        timeStamp
+        + " - "
+        + "Inverter Eco Status Change Failed:"
+        + result["data"]["message"]
+        )
