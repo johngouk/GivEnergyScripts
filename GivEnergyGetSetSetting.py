@@ -10,7 +10,7 @@ import csv
 import requests
 from datetime import datetime, time, date, timedelta
 
-verbosity = 1
+verbosity = 0
 
 
 action_write = "write"
