@@ -7,11 +7,11 @@ import csv
 from datetime import datetime, time, date, timedelta
 import urllib.parse
 
-ofName = "/Users/john/Downloads/inverterSettings.csv"
+ofName = "inverterSettings.csv"
 
-API_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NTc3MDIxOS1jYWE2LTRmOTctOTE3Ni0zNDBlZGMzZDQxNTgiLCJqdGkiOiJhNDY3MWNjZTlmN2FkNzhjNTcxMTAwMThhMDU1OGZmZDJkYjI0YjIwZmFkZmE2ZGY1YTQ0NmZmMDg5YzE5NmYzNWJmODVmYzZiMTcwNTgxNSIsImlhdCI6MTY5OTAxODA0MS42NTk1MjYsIm5iZiI6MTY5OTAxODA0MS42NTk1MywiZXhwIjozMjUwMzY4MDAwMC4wMDkwNiwic3ViIjoiNTQ1ODEiLCJzY29wZXMiOlsiYXBpIl19.pGWrdb-QuRDlDuLo08LXgcKs8p2Ak54vu9AiNDsctldc144ZCXOZNClkoygazlhRcJJab4c3qWbre6H_bbpq-g"
+API_token = "<your API token>"
 
-url = "https://api.givenergy.cloud/v1/inverter/FD2327G421/settings"
+url = "https://api.givenergy.cloud/v1/inverter/<your Inverter ID>/settings"
 headers = {
     "Authorization": "Bearer "+API_token,
     "Content-Type": "application/json",
