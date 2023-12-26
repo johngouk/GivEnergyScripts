@@ -1,5 +1,6 @@
 # GivEnergyScripts
-Some Python scripts for performing GivEnergy Inverter queries and operations
+Some Python scripts for performing GivEnergy Inverter queries and operations, using the Portal API.
+Check out https://givenergy.cloud/docs/api/v1 for how to use the API - you'll need an API Token as described there, and the ID of your Inverter.
 
 They all use an INI file to set up the required API key and Inverter ID.
 
