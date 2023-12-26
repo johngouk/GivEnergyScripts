@@ -24,7 +24,7 @@ def printVerbose(thing):
 def getAvailableSettings():
     # Load the setting list
     settingList = {}
-    ofName = "inverterSettings.csv"
+    ofName = "inverterSettingsValidation.csv"
     with open(ofName, "r", encoding="utf-8", newline="") as csvfile:
         csvIn = csv.DictReader(csvfile, dialect="excel")
         for row in csvIn:
