@@ -1,19 +1,16 @@
 """
-    Program to modify current Eco Inverter setting using Givenergy Cloud API
+    Program to flip current Eco Inverter setting using Givenergy Cloud API
     Modified for Python 3.4.2 isoformat() sig
-    Usage:
-        python3 GivEnergyEcoModeSet.py [-v] [ON|OFF]
+
 """
+import configparser as c
 import requests
 import datetime
 import argparse
     
-API_token = "<your API Token>"
-
 ID_Eco = "24"
 action_write = "write"
 action_read = "read"
-
 
 parser = argparse.ArgumentParser(prog='setEcoState')
 parser.add_argument("newState", help="New Inverter Eco State - ON/OFF")
@@ -34,7 +31,13 @@ else:
     print('newState must be "ON" or "OFF"!')
     exit(1)
 
-url = "https://api.givenergy.cloud/v1/inverter/<your Inverter ID>/settings"
+config = c.ConfigParser()
+config.read('GivEnergyConfig.ini')
+
+API_token = config['DEFAULT']['api_token']
+inverterID = config['DEFAULT']['inverterid']
+
+url = 'https://api.givenergy.cloud/v1/inverter/'+inverterID+'/settings'
 headers = {
     "Authorization": "Bearer " + API_token,
     "Content-Type": "application/json",
