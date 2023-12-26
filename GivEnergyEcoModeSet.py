@@ -2,6 +2,8 @@
     Program to flip current Eco Inverter setting using Givenergy Cloud API
     Modified for Python 3.4.2 isoformat() sig
 
+    python3 GivEnergyEcoModeSet.py [-v] ON|OFF
+
 """
 import configparser as c
 import requests
