@@ -4,7 +4,7 @@ Check out https://givenergy.cloud/docs/api/v1 for how to use the API - you'll ne
 
 They all use an INI file to set up the required API key and Inverter ID.
 
-- **GivEnergyConfig.ini:** config file for all scripts; contains API Token and Inverter ID
+- **GivEnergyConfig.ini:** config file for all scripts; contains API Token and Inverter ID. Replace "<....>" with your values, no quotes required
 - **GivEnergyEcoModeSet.py:** script to set the ECO setting to ON/OFF
 - **GivEnergyGetSetSetting.py:** script to get a specified value and set it to another - **INCOMPLETE!!** Uses output file from GivEnergyInverterSettingsRead.py to validate entries 
 - **GivEnergyInverterSettingValues.py:** gets all the current values for available settings and saves them in a dated CSV file
