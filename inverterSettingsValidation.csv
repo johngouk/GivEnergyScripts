@@ -1,0 +1,101 @@
+id,name,validation_rules,validation
+17,Enable AC Charge Upper % Limit,['boolean'],Value must be either true or false
+24,Enable Eco Mode,['boolean'],Value must be either true or false
+28,AC Charge 2 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+29,AC Charge 2 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+41,DC Discharge 2 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+42,DC Discharge 2 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+47,Inverter Max Output Active Power Percent,"['between:0,100']",Value must be between 0 and 100
+53,DC Discharge 1 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+54,DC Discharge 1 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+56,Enable DC Discharge,['boolean'],Value must be either true or false
+64,AC Charge 1 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+65,AC Charge 1 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+66,AC Charge Enable,['boolean'],Value must be either true or false
+71,Battery Reserve % Limit,"['between:4,100']",Value must be between 4 and 100
+72,Battery Charge Power,"['between:0,3600']",Value must be between 0 and 3600
+73,Battery Discharge Power,"['between:0,3600']",Value must be between 0 and 3600
+75,Battery Cutoff % Limit,"['between:4,100']",Value must be between 4 and 100
+77,AC Charge Upper % Limit,"['between:0,100']",Value must be between 0 and 100
+83,Restart Inverter,"['writeonly', 'exact:100']",Value can only be 100
+96,Pause Battery,"['in:0,1,2,3']","Value must be one of: 0, 1, 2, 3 (Not Paused, Pause Charge, Pause Discharge, Pause Charge & Discharge)"
+101,AC Charge 1 Upper SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+102,AC Charge 2 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+103,AC Charge 2 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+104,AC Charge 2 Upper SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+105,AC Charge 3 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+106,AC Charge 3 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+107,AC Charge 3 Upper SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+108,AC Charge 4 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+109,AC Charge 4 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+110,AC Charge 4 Upper SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+111,AC Charge 5 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+112,AC Charge 5 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+113,AC Charge 5 Upper SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+114,AC Charge 6 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+115,AC Charge 6 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+116,AC Charge 6 Upper SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+117,AC Charge 7 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+118,AC Charge 7 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+119,AC Charge 7 Upper SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+120,AC Charge 8 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+121,AC Charge 8 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+122,AC Charge 8 Upper SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+123,AC Charge 9 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+124,AC Charge 9 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+125,AC Charge 9 Upper SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+126,AC Charge 10 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+127,AC Charge 10 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+128,AC Charge 10 Upper SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+129,DC Discharge 1 Lower SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+130,DC Discharge 2 Lower SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+131,DC Discharge 3 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+132,DC Discharge 3 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+133,DC Discharge 3 Lower SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+134,DC Discharge 4 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+135,DC Discharge 4 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+136,DC Discharge 4 Lower SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+137,DC Discharge 5 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+138,DC Discharge 5 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+139,DC Discharge 5 Lower SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+140,DC Discharge 6 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+141,DC Discharge 6 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+142,DC Discharge 6 Lower SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+143,DC Discharge 7 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+144,DC Discharge 7 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+145,DC Discharge 7 Lower SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+146,DC Discharge 8 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+147,DC Discharge 8 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+148,DC Discharge 8 Lower SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+149,DC Discharge 9 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+150,DC Discharge 9 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+151,DC Discharge 9 Lower SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+152,DC Discharge 10 Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+153,DC Discharge 10 End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+154,DC Discharge 10 Lower SOC % Limit,"['between:0,100']",Value must be between 0 and 100
+155,Pause Battery Start Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+156,Pause Battery End Time,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+258,Force Off Grid,['boolean'],Value must be either true or false
+265,Export Power Priority,"['in:0,1,2']","Value must be one of: 0, 1, 2 (Load First, Battery First, Grid First)"
+267,Battery Charge Power Percentage,"['between:1,100']",Value must be between 1 and 100
+268,Battery Discharge Power Percentage,"['between:1,100']",Value must be between 1 and 100
+271,Enable EPS,['boolean'],Value must be either true or false
+380,Enable Plant EMS Control,['boolean'],Value must be either true or false
+384,Discharge Start Time Slot 1,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+385,Discharge End Time Slot 1,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+386,Discharge SOC % Limit 1,"['between:4,100']",Value must be between 4 and 100
+387,Discharge Start Time Slot 2,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+388,Discharge End Time Slot 2,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+389,Discharge SOC % Limit 2,"['between:4,100']",Value must be between 4 and 100
+390,Discharge Start Time Slot 3,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+391,Discharge End Time Slot 3,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+392,Discharge SOC % Limit 3,"['between:4,100']",Value must be between 4 and 100
+393,Charge Start Time Slot 1,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+394,Charge End Time Slot 1,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+395,Charge SOC % Limit 1,"['between:4,100']",Value must be between 4 and 100
+396,Charge Start Time Slot 2,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+397,Charge End Time Slot 2,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+398,Charge SOC % Limit 2,"['between:4,100']",Value must be between 4 and 100
+399,Charge Start Time Slot 3,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+400,Charge End Time Slot 3,['date_format:H:i'],Value format should be HH:mm. Use correct time range for hour and minutes
+401,Charge SOC % Limit 3,"['between:4,100']",Value must be between 4 and 100
