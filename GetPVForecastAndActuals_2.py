@@ -72,7 +72,6 @@ def sumPower (data, day):
 def getForecast(urls):
     # 'urls' is a list of URLs
     # 'data' is a list of arrays of forecast data structures
-    # API_token = 'xftDsUBNnTAYpgVrmWDKRxK1UOyM5nez'
     headers = {
         "Authorization": "Bearer " + SC_API_token,
         "Content-Type": "application/json",
