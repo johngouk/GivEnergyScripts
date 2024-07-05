@@ -147,11 +147,11 @@ def getPVActuals(dateRequired):
     data["Grid_Home"] = x["3"]
     data["Grid_Batt"] = x["4"]
     data["Batt_Home"] = x["5"]
-    data["Batt_Grid"] = x["5"]
+    data["Batt_Grid"] = x["6"]
     data["PV_Total"] = x["0"] + x["1"] + x["2"]
     data["Home_Total"] = x["0"] + x["3"] + x["5"]
     data["Import_Total"] = x["3"] + x["4"]
-    data["Export_Total"] = x["3"] + x["4"]
+    data["Export_Total"] = x["2"] + x["6"]
     return data
 
 def openDatabase(filename):
